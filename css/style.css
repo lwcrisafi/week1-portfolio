@@ -1,4 +1,68 @@
 main {
-    text-align: center;
-    font-family: 'Bitter', serif;
+  text-align: center;
+  font-family: "Bitter", serif;
 }
+
+.nav__links {
+  background-color: #0C1A1A;
+  color: white;
+  height: 40px;
+  font-size: 18px;
+  width: 40%%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+a.nav__links {
+  color: white;
+  text-decoration: none;
+}
+
+a.nav__links:hover {
+    background-color: #396662;
+}
+
+header {
+    background-image: url("../img/portfolio-bg.jpg");
+    height: 375px;
+    color: white;
+    margin-top: 100px;
+}
+
+.advert {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+ .project-stages {
+    background-color: #0C1A1A;
+    color: white;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+ }
+
+ .project-stages__items {
+    font-size: 14px;
+    padding: 2px;
+   
+ }
+
+ .project-stages__titles {
+    color: #396662;
+
+ }
+
+.skills__graph {
+    color: #54be90;
+    font-size: 20px;
+    margin-top: 100px;
+   
+}
+
