@@ -1,68 +1,212 @@
+* {
+  box-sizing: border-box;
+}
 main {
   text-align: center;
   font-family: "Bitter", serif;
 }
 
-.nav__links {
-  background-color: #0C1A1A;
-  color: white;
-  height: 40px;
-  font-size: 18px;
-  width: 40%%;
+/* Navigation */
+.nav {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: #0c1a1a;
+  color: white;
+  font-size: 18px;
+  position: fixed;
+   top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-a.nav__links {
+/* .nav__links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0c1a1a;
+  color: white;
+  height: 4rem;
+  font-size: 18px;
+  width: 100px;
+} */
+
+ a.nav__links {
   color: white;
   text-decoration: none;
+  padding: 40px;
+} 
+
+.nav__container {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 a.nav__links:hover {
-    background-color: #396662;
+  background-color: #396662;
+  
 }
 
+/* Header*/
 header {
-    background-image: url("../img/portfolio-bg.jpg");
-    height: 375px;
-    color: white;
-    margin-top: 100px;
+  background-image: url("../img/portfolio-bg.jpg");
+  height: 600px;
+  color: white;
+  margin-top: 100px;
+  padding-top: 9%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .advert {
-    margin-top: 100px;
-    margin-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
- .project-stages {
-    background-color: #0C1A1A;
-    color: white;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+/* Project Stages */
 
-
- }
-
- .project-stages__items {
-    font-size: 14px;
-    padding: 2px;
-   
- }
-
- .project-stages__titles {
-    color: #396662;
-
- }
-
-.skills__graph {
-    color: #54be90;
-    font-size: 20px;
-    margin-top: 100px;
-   
+.project-stages {
+  background-color: #0c1a1a;
+  color: white;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.project-stages__items {
+  font-size: 14px;
+  padding: 2px;
+}
+
+.project-stages__titles {
+  color: #396662;
+}
+
+.skills {
+  padding: 4rem 15% 8rem 15%;
+}
+
+.skills .heading {
+  color: #396662;
+  font-size: 32px;
+}
+
+.skill__item {
+  display: flex;
+  width: 100%;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.skill__label {
+  width: 20%;
+  color: #ffffff;
+  background-color: #0c1a1a;
+  text-align: center;
+  padding: 0.75rem;
+}
+
+.skill__progress-bar {
+  width: 80%;
+  background-color: #ebebeb;
+  padding: 0.75rem;
+  text-align: right;
+  position: relative;
+}
+
+.skill__progress {
+  background-color: #54be90;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.skill__progress_width_60 {
+  width: 60%;
+}
+
+.skill__progress_width_70 {
+  width: 70%;
+}
+
+.skill__progress_width_80 {
+  width: 80%;
+}
+
+.portfolio__header {
+  font-size: 32px;
+  color: white;
+  padding-top: 75px;
+}
+
+.portfolio {
+  background-color: #396662;
+  height: 700px;
+}
+
+.portfolio__items {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.portfolio__box {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 90px;
+  margin-right: 70px;
+  padding: 10px;
+  height: 200px;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  border-style: solid;
+}
+
+.about-me {
+  height: 700px;
+}
+
+.about-me > h2 {
+  font-size: 32px;
+  color: #396662;
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+
+.about-me__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me__img {
+  margin: 20px;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+}
+
+.about-me__details {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 90px;
+  margin-right: 70px;
+  padding: 10px;
+  height: 200px;
+  width: 400px;
+}

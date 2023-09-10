@@ -14,17 +14,19 @@
   </head>
   <body>
     <main>
-      <nav class="nav__links">
-        <a class="nav__links" href="">AW</a>
-        <a class="nav__links" href="">HOME</a>
-        <a class="nav__links" href="">SKILLS</a>
-        <a class="nav__links" href="">PORTFOLIO</a>
-        <a class="nav__links" href="">ABOUT ME</a>
-        <a class="nav__links" href="">CONTACT</a>
+      <nav class="nav">
+        <ul class="nav__container">
+            <li><a class="nav__links">AW</a></li>
+            <li><a href="#header" class="nav__links">HOME</a></li>
+            <li><a href="#skills" class="nav__links" >SKILLS</a></li>
+            <li><a href="#portfolio" class="nav__links">PORTFOLIO</a></li>
+            <li><a href="#about-me" class="nav__links">ABOUT ME</a></li>
+            <li><a href="#contact" class="nav__links">CONTACT</a></li>
+       </ul>
       </nav>
 
-      <header>
-        <h1>Hi, I am Aneta Webie.</h1>
+      <header id="header" class="header">
+        <h1>Hi, I am <a href="#about" class="header__link">Aneta Webie.</a></h1>
         <h2>I'm a Full-Stack Web Developer.</h2>
       </header>
 
@@ -40,7 +42,7 @@
         </p>
       </div>
 
-      <section class="project-stages">
+      <section id="project-stages" class="project-stages">
         <div class="project-stages__items">
           <h2 class="project-stages__titles"><strong>Discover</strong></h2>
           <p>
@@ -71,40 +73,130 @@
         </div>
       </section>
 
-      <section class="skills__graph">
-        <h1>MY SKILLS</h1>
-        <img src="img/skillsgraph.jpg" alt="graph of skills" />
-      </section>
-      <section>
-        <h1>MY PORTFOLIO</h1>
-        <div>
-          <span>Box 1</span>
-          <span>Box 2</span>
-          <span>Box 3</span>
-          <span>Box 4</span>
-          <span>Box 5</span>
-          <span>Box 6</span>
+      
+        <section id="skills" class="skills">
+			<h2 class="heading">MY SKILLS</h2>
+
+			<div class="skill__item">
+				<div class="skill__label">HTML</div>
+				<div class="skill__progress-bar">
+					<div class="skill__progress skill__progress_width_80"></div>
+					<div>80%</div>
+				</div>
+			</div>
+
+			<div class="skill__item">
+				<div class="skill__label">CSS, Sass</div>
+				<div class="skill__progress-bar">
+					<div class="skill__progress skill__progress_width_80"></div>
+					<div>80%</div>
+				</div>
+			</div>
+
+			<div class="skill__item">
+				<div class="skill__label">JavaScript</div>
+				<div class="skill__progress-bar">
+					<div class="skill__progress skill__progress_width_70"></div>
+					<div>70%</div>
+				</div>
+			</div>
+
+			<div class="skill__item">
+				<div class="skill__label">React</div>
+				<div class="skill__progress-bar">
+					<div class="skill__progress skill__progress_width_60"></div>
+					<div>60%</div>
+				</div>
+			</div>
+
+			<div class="skill__item">
+				<div class="skill__label">jQuery</div>
+				<div class="skill__progress-bar">
+					<div class="skill__progress skill__progress_width_70"></div>
+					<div>70%</div>
+				</div>
+			</div>
+
+			<div class="skill__item">
+				<div class="skill__label">PHP</div>
+				<div class="skill__progress-bar">
+					<div class="skill__progress skill__progress_width_60"></div>
+					<div>60%</div>
+				</div>
+			</div>
+
+			<div class="skill__item">
+				<div class="skill__label">Laravel</div>
+				<div class="skill__progress-bar">
+					<div class="skill__progress skill__progress_width_60"></div>
+					<div>60%</div>
+				</div>
+			</div>
+
+			<div class="skill__item">
+				<div class="skill__label">UX</div>
+				<div class="skill__progress-bar">
+					<div class="skill__progress skill__progress_width_60"></div>
+					<div>60%</div>
+				</div>
+			</div>
+		</section>
+      <section id="portfolio" class="portfolio">
+        <h1 class="portfolio__header">MY PORTFOLIO</h1>
+        <div class="portfolio__items">
+          <span class="portfolio__box">
+            <img src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <h4>Tech Stack:</h4>
+          </span>
+          <span class="portfolio__box">
+             <img src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <h4>Tech Stack:</h4>
+          </span>
+          <span class="portfolio__box">
+             <img src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <h4>Tech Stack:</h4>
+          </span>
+          <span class="portfolio__box">
+             <img src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <h4>Tech Stack:</h4>
+          </span>
+          <span class="portfolio__box">
+             <img src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <h4>Tech Stack:</h4>
+          </span>
+          <span class="portfolio__box">
+             <img src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <h4>Tech Stack:</h4>
+          </span>
         </div>
       </section>
-      <section>
+      <section id="about-me" class="about-me">
         <h2>ABOUT ME</h2>
-        <div>
-          <img src="img/portfolio-hiking.jpg" alt="hiking the great unknown" />
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus,
-            reiciendis tempora! Perspiciatis itaque repudiandae, recusandae
-            pariatur repellendus, beatae nisi eaque modi, illum voluptates
-            provident corrupti aliquam quos adipisci amet molestias. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Nisi repudiandae ex
-            labore laborum, sequi, quasi quae facilis delectus aut architecto
-            nihil aliquam quaerat quia, blanditiis placeat deleniti voluptate
-            necessitatibus ad.
-          </p>
-          <h4>Get in touch and let's do something great together.</h4>
-          <button>Contact Me</button>
+        <div class="about-me__main">
+          <img src="img/portfolio-hiking.jpg" alt="hiking the great unknown" class="about-me__img"/>
+          <div class="about-me__details">
+              <p></p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus,
+                reiciendis tempora! Perspiciatis itaque repudiandae, recusandae
+                pariatur repellendus, beatae nisi eaque modi, illum voluptates
+                provident corrupti aliquam quos adipisci amet molestias. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Nisi repudiandae ex
+                labore laborum, sequi, quasi quae facilis delectus aut architecto
+                nihil aliquam quaerat quia, blanditiis placeat deleniti voluptate
+                necessitatibus ad.
+              </p>
+              <h4>Get in touch and let's do something great together.</h4>
+              <button>Contact Me</button>
+          </div>
         </div>
       </section>
-      <section>
+      <section class="social-media">
         <h3>FIND ME HERE</h3>
         <div>
           <a href="" target="_blank">Git</a>
@@ -112,7 +204,7 @@
           <a href="" target="_blank">Instagram</a>
         </div>
       </section>
-      <section>
+      <section id="contact" class="contact">
         <form action="">
           <label for="fname">First name*:</label><br />
           <input type="text" id="fname" name="fname" /><br />
