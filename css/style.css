@@ -17,7 +17,7 @@ main {
   color: white;
   font-size: 18px;
   position: fixed;
-   top: 0;
+  top: 0;
   left: 0;
   z-index: 2;
 }
@@ -36,26 +36,25 @@ main {
   width: 100px;
 } */
 
- a.nav__links {
+a.nav__links {
   color: white;
   text-decoration: none;
-  padding: 40px;
-} 
+  padding: 100px;
+}
 
 .nav__container {
-	display: flex;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a.nav__links:hover {
   background-color: #396662;
-  
 }
 
 /* Header*/
-header {
+.header {
   background-image: url("../img/portfolio-bg.jpg");
   height: 600px;
   color: white;
@@ -65,12 +64,37 @@ header {
   background-repeat: no-repeat;
 }
 
-.advert {
-  margin-top: 100px;
-  margin-bottom: 100px;
+.header__title {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+.header__item {
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+.header__link {
+  color: white;
+  border-bottom: 5px solid #396662;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  opacity: 0.5;
 }
 
 /* Project Stages */
+.project {
+  padding-top: 100px;
+}
+
+.project__advert {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 5%;
+}
 
 .project-stages {
   background-color: #0c1a1a;
@@ -80,24 +104,41 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 2% 5% 2% 5%;
 }
 
 .project-stages__items {
+  width: 15%;
   font-size: 14px;
   padding: 2px;
+  position: relative;
 }
 
 .project-stages__titles {
   color: #396662;
+  font-weight: 800;
 }
 
+.project-stages__circles {
+  width: 8rem;
+  height: 8rem;
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  top: -10rem;
+  left: 30%;
+}
+
+/* Skills */
 .skills {
-  padding: 4rem 15% 8rem 15%;
+  padding: 5% 20% 5% 20%;
 }
 
 .skills .heading {
   color: #396662;
-  font-size: 32px;
+  font-size: 42px;
+  padding-bottom: 5%;
+  margin-top: -1%;
 }
 
 .skill__item {
@@ -124,7 +165,7 @@ header {
 }
 
 .skill__progress {
-  background-color: #54be90;
+  background-color: #396662;
   height: 100%;
   position: absolute;
   top: 0;
@@ -143,15 +184,21 @@ header {
   width: 80%;
 }
 
+/* Portfolio */
+
 .portfolio__header {
-  font-size: 32px;
+  font-size: 48px;
   color: white;
-  padding-top: 75px;
+  padding-top: 50px;
 }
 
 .portfolio {
   background-color: #396662;
-  height: 700px;
+  height: 1000px;
+  
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; */
 }
 
 .portfolio__items {
@@ -159,17 +206,17 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .portfolio__box {
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 90px;
-  margin-right: 70px;
+  margin-left: 100px;
+  margin-right: 100px;
   padding: 10px;
-  height: 200px;
-  width: 250px;
+  height: 400px;
+  width: 500px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -209,4 +256,59 @@ header {
   padding: 10px;
   height: 200px;
   width: 400px;
+}
+
+/* Contact */
+
+.contact {
+    background-color: #396662;
+    padding: 2%;
+}
+.form {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 4rem;
+}
+.form__input {
+  width: 48%;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ebebeb;
+  outline: none;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.form__label {
+  width: 100%;
+  color: #ebebeb;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.form__textarea {
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+}
+
+.form__button {
+  width: 100%;
+  color: #ffffff;
+  background-color: #232323;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+  padding: 0.75rem;
+  cursor: pointer;
 }
